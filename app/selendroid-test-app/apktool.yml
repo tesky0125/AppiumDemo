@@ -1,0 +1,12 @@
+version: 1.5.2
+apkFileName: selendroid-test-app.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '10'
+packageInfo:
+  cur_package: io.selendroid.testapp
+  orig_package: io.selendroid.testapp
+compressionType: false

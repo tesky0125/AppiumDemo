@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrays_preferedProgrammingLanguage">
+        <item>Ruby</item>
+        <item>PHP</item>
+        <item>Scala</item>
+        <item>Python</item>
+        <item>Javascript</item>
+        <item>Java</item>
+        <item>C++</item>
+        <item>C#</item>
+    </string-array>
+</resources>

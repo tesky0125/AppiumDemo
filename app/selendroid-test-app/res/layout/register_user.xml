@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/welcomeRegisterUser" />
+        <TextView android:textStyle="bold" android:id="@id/label_username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_username" android:contentDescription="label_usernameCD" />
+        <EditText android:id="@id/inputUsername" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="20.0dip" android:singleLine="true" />
+        <TextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_email" />
+        <EditText android:id="@id/inputEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="20.0dip" android:singleLine="true" android:contentDescription="email of the customer" />
+        <TextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_password" />
+        <EditText android:id="@id/inputPassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:password="true" android:singleLine="true" />
+        <TextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_name" />
+        <EditText android:id="@id/inputName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="20.0dip" android:text="Mr. Burns" android:singleLine="true" />
+        <TextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_preferedProgrammingLanguage" />
+        <Spinner android:entries="@array/arrays_preferedProgrammingLanguage" android:id="@id/input_preferedProgrammingLanguage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:prompt="@string/prompt_preferedProgrammingLanguage" />
+        <TextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_conditions" />
+        <CheckBox android:id="@id/input_adds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_acceptAdds" />
+        <Button android:id="@id/btnRegisterUser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/verifyNewUser" android:onClick="registerUser" />
+    </LinearLayout>
+</ScrollView>

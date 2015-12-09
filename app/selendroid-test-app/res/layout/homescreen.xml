@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hello" />
+    <LinearLayout android:id="@id/l10n" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="l10nCD">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Localization (L10n) locator test" />
+        <Button android:id="@id/buttonTest" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button" android:onClick="showL10nDialog" android:contentDescription="buttonTestCD" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="imageViewCD">
+        <ImageButton android:id="@id/buttonStartWebview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chrome" android:scaleType="center" android:layout_weight="1.0" android:onClick="showWebViewDialog" android:contentDescription="buttonStartWebviewCD" />
+        <ImageButton android:id="@id/startUserRegistration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/person" android:layout_weight="1.0" android:onClick="showUserRegistrationDialog" android:contentDescription="startUserRegistrationCD" />
+    </LinearLayout>
+    <EditText android:id="@id/my_text_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:contentDescription="my_text_fieldCD" />
+    <LinearLayout android:id="@id/lastElementRow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="imageViewCD">
+        <Button android:id="@id/waitingButtonTest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show Progress Bar for a while" android:onClick="showWaitingDialog" android:contentDescription="waitingButtonTestCD" />
+        <CheckBox android:id="@id/input_adds_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/label_acceptAdds" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/visibleTestArea" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="visibleTestAreaCD">
+        <Button android:id="@id/visibleButtonTest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Display text view" android:onClick="displayTextView" android:contentDescription="visibleButtonTestCD" />
+        <TextView android:id="@id/visibleTextView" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Text is sometimes displayed" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/visibleTestArea" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="visibleTestAreaCD">
+        <Button android:id="@id/showToastButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Displays a Toast" android:layout_weight="1.0" android:onClick="displayToast" android:contentDescription="showToastButtonCD" />
+        <Button android:id="@id/showPopupWindowButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Display Popup Window" android:layout_weight="1.0" android:onClick="displayPopupWindow" android:contentDescription="showPopupWindowButtonCD" />
+        <Button android:id="@id/exceptionTestButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Press to throw unhandled exception" android:layout_weight="1.0" android:contentDescription="exceptionTestButtonCD" />
+    </LinearLayout>
+    <EditText android:id="@id/exceptionTestField" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Type to throw unhandled exception" android:ems="10" />
+    <TextView android:id="@id/encodingTextview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="パソコン版にする" />
+</LinearLayout>
